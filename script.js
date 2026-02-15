@@ -10,7 +10,7 @@ const i18n = {
             ctaEmail: 'Email',
             ctaCopy: 'Copy message',
         },
-        metric: { instances: 'Instances', throughput: 'Throughput', uptime: 'Uptime', availability: 'Availability', immediate: 'Immediate', response: 'Response' },
+        metric: { instances: 'Instances', throughput: 'Throughput', uptime: 'Uptime', uptimeValue: 'High availability', availability: 'Availability', immediate: 'Immediate', response: 'Response' },
         impact: {
             title: 'Production impact',
             desc: 'Measurable results in infrastructure and operations.',
@@ -66,7 +66,7 @@ const i18n = {
             ctaEmail: 'Correo',
             ctaCopy: 'Copiar mensaje',
         },
-        metric: { instances: 'Instancias', throughput: 'Throughput', uptime: 'Uptime', availability: 'Disponibilidad', immediate: 'Inmediata', response: 'Respuesta' },
+        metric: { instances: 'Instancias', throughput: 'Throughput', uptime: 'Uptime', uptimeValue: 'Alta disponibilidad', availability: 'Disponibilidad', immediate: 'Inmediata', response: 'Respuesta' },
         impact: {
             title: 'Impacto en producción',
             desc: 'Resultados medibles en infraestructura y operaciones.',
