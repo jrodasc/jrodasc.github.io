@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan Rodas | Cloud & DevOps Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-brand">
+        <h1>Juan Rodas</h1>
+        <span class="subtitle">Cloud & DevOps Engineer</span>
+    </div>
+    <nav class="header-nav">
+        <a href="#impact" data-i18n="nav.impact">Impact</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="lang-switch">
+        <button class="lang-btn" onclick="setLang('es')">ES</button>
+        <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <p class="hero-badge" data-i18n="hero.badge">Available • Remote</p>
+        <h2 class="hero-title">
+            <span data-i18n="hero.title1">Cloud & infrastructure</span>
+            <span data-i18n="hero.title2">that scales without friction.</span>
+        </h2>
+        <p class="hero-tagline" data-i18n-html="hero.tagline">Scalable architecture, automated CI/CD and reliable operations. <strong>I adapt to your team's stack and workflow.</strong></p>
+        <div class="hero-cta">
+            <a href="https://www.linkedin.com/in/juanrodas/" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn</a>
+            <a href="mailto:juan.rodas@outlook.com" class="btn btn-secondary" data-i18n="hero.ctaEmail">Email</a>
+            <button type="button" class="btn btn-ghost" onclick="copyMessage()" data-i18n="hero.ctaCopy">Copy message</button>
+        </div>
+        <div class="hero-metrics">
+            <div class="metric">
+                <span class="metric-label" data-i18n="metric.instances">Instances</span>
+                <span class="metric-value">100+ AWS</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label" data-i18n="metric.throughput">Throughput</span>
+                <span class="metric-value">20k+ req/5min</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label" data-i18n="metric.uptime">Uptime</span>
+                <span class="metric-value">99.9%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label" data-i18n="metric.availability">Availability</span>
+                <span class="metric-value" data-i18n="metric.immediate">Immediate</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label" data-i18n="metric.response">Response</span>
+                <span class="metric-value">&lt; 24h</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="section">
+        <div class="section-header">
+            <h2 data-i18n="impact.title">Production impact</h2>
+            <p data-i18n="impact.desc">Measurable results in infrastructure and operations.</p>
+        </div>
+        <div class="impact-cards">
+            <article class="card">
+                <h3 data-i18n="impact.card1.title">CI/CD & Automation</h3>
+                <ul>
+                    <li data-i18n="impact.card1.item1">60% deployment time reduction</li>
+                    <li data-i18n="impact.card1.item2">Automated pipelines</li>
+                    <li data-i18n="impact.card1.item3">Infrastructure as code</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h3 data-i18n="impact.card2.title">Reliability</h3>
+                <ul>
+                    <li data-i18n="impact.card2.item1">99.9% uptime in distributed environments</li>
+                    <li data-i18n="impact.card2.item2">Monitoring and alerting</li>
+                    <li data-i18n="impact.card2.item3">Postmortems and improvements</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h3 data-i18n="impact.card3.title">Performance</h3>
+                <ul>
+                    <li data-i18n="impact.card3.item1">PostgreSQL optimization -35% latency</li>
+                    <li data-i18n="impact.card3.item2">Backend 20k+ req/5min</li>
+                    <li data-i18n="impact.card3.item3">Scaling without downtime</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+        <div class="section-header">
+            <h2 data-i18n="services.title">Services</h2>
+            <p data-i18n="services.desc">Production-ready deliverables.</p>
+        </div>
+        <div class="services-grid">
+            <article class="card">
+                <h3 data-i18n="services.card1.title">Cloud infrastructure</h3>
+                <ul>
+                    <li data-i18n="services.card1.item1">AWS, GCP, Azure, multi-region</li>
+                    <li data-i18n="services.card1.item2">Terraform, CloudFormation</li>
+                    <li data-i18n="services.card1.item3">Networking and security</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h3 data-i18n="services.card2.title">CI/CD & DevOps</h3>
+                <ul>
+                    <li data-i18n="services.card2.item1">Pipelines (GitHub Actions, Jenkins)</li>
+                    <li data-i18n="services.card2.item2">Containers (Docker, K8s)</li>
+                    <li data-i18n="services.card2.item3">Blue-green, canary</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h3 data-i18n="services.card3.title">Observability</h3>
+                <ul>
+                    <li data-i18n="services.card3.item1">Logs, metrics, tracing</li>
+                    <li data-i18n="services.card3.item2">Grafana, Prometheus, ELK</li>
+                    <li data-i18n="services.card3.item3">Alerts and dashboards</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h3 data-i18n="services.card4.title">Migrations</h3>
+                <ul>
+                    <li data-i18n="services.card4.item1">Legacy → containers</li>
+                    <li data-i18n="services.card4.item2">On-prem → cloud</li>
+                    <li data-i18n="services.card4.item3">Zero-downtime approach</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="teams" class="section">
+        <div class="section-header">
+            <h2 data-i18n="teams.title">For teams</h2>
+            <p data-i18n="teams.desc">I adapt to your stack, style and deadlines.</p>
+        </div>
+        <div class="teams-content">
+            <div class="teams-features">
+                <div class="feature">
+                    <h4 data-i18n="teams.feat1.title">Flexible collaboration</h4>
+                    <p data-i18n="teams.feat1.desc">Per project, per sprint or ongoing support.</p>
+                </div>
+                <div class="feature">
+                    <h4 data-i18n="teams.feat2.title">Frictionless delivery</h4>
+                    <p data-i18n="teams.feat2.desc">Clear documentation, versioned IaC, direct handoff.</p>
+                </div>
+                <div class="feature">
+                    <h4 data-i18n="teams.feat3.title">I accelerate the flow</h4>
+                    <p data-i18n="teams.feat3.desc">I automate the repeatable and reduce time without lowering quality.</p>
+                </div>
+            </div>
+            <div class="teams-diffs">
+                <div>
+                    <h4 data-i18n="teams.diffs.title">Differentiators</h4>
+                    <ul>
+                        <li data-i18n="teams.diffs.item1">Fast delivery without losing quality</li>
+                        <li data-i18n="teams.diffs.item2">I adapt to the team's stack</li>
+                        <li data-i18n="teams.diffs.item3">Focus on reliability and costs</li>
+                        <li data-i18n="teams.diffs.item4">Clean, maintainable code</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section section-alt">
+        <div class="section-header">
+            <h2 data-i18n="process.title">Process</h2>
+            <p data-i18n="process.desc">Simple, fast and controlled.</p>
+        </div>
+        <div class="process-steps">
+            <div class="step">
+                <span class="step-num">01</span>
+                <h4 data-i18n="process.step1.title">Brief</h4>
+                <p data-i18n="process.step1.desc">Objective, current architecture, requirements, deadline.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">02</span>
+                <h4 data-i18n="process.step2.title">First deliverable</h4>
+                <p data-i18n="process.step2.desc">In 24–48h I send a proposal or usable PoC.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">03</span>
+                <h4 data-i18n="process.step3.title">Iteration</h4>
+                <p data-i18n="process.step3.desc">Quick adjustments with clear feedback.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">04</span>
+                <h4 data-i18n="process.step4.title">Delivery</h4>
+                <p data-i18n="process.step4.desc">Deploy + documentation + handoff.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="section-header">
+            <h2 data-i18n="faq.title">FAQ</h2>
+            <p data-i18n="faq.desc">Quick answers.</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.q1">Remote or on-site?</button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a1">Remote. I adapt to your schedule and tools (Slack, Jira, etc.).</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.q2">How do you work with teams?</button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a2">Per project or per sprint. I send clear updates, iterate quickly and deliver production-ready.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.q3">Which cloud platforms do you manage?</button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a3">Mainly AWS and Azure, also GCP. Terraform for multi-cloud when applicable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="section section-alt">
+        <div class="section-header">
+            <h2 data-i18n="stack.title">Stack</h2>
+            <p data-i18n="stack.desc">Technologies used in real projects. I adapt to the team's stack.</p>
+        </div>
+        <div class="stack-badges">
+            <span>AWS</span>
+            <span>Azure</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Terraform</span>
+            <span>GitHub Actions</span>
+            <span>PostgreSQL</span>
+            <span>Python</span>
+            <span>Linux</span>
+            <span>Prometheus</span>
+            <span>Grafana</span>
+            <span>CI/CD</span>
+        </div>
+        <p class="stack-note" data-i18n="stack.note">If the team uses a different stack, I adapt.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2 data-i18n="contact.title">Contact</h2>
+            <p data-i18n="contact.desc">I respond quickly.</p>
+        </div>
+        <div class="contact-options">
+            <div class="contact-item">
+                <div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">jrodasc</span>
+                </div>
+                <a href="https://www.linkedin.com/in/juanrodas/" target="_blank" rel="noopener" class="btn btn-sm" data-i18n="contact.open">Open</a>
+            </div>
+            <div class="contact-item">
+                <div>
+                    <span class="contact-label" data-i18n="contact.email">Email</span>
+                    <span class="contact-value">juan.rodas@outlook.com</span>
+                </div>
+                <a href="mailto:juan.rodas@outlook.com" class="btn btn-sm" data-i18n="contact.send">Send</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Juan Rodas</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
