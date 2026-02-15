@@ -15,7 +15,7 @@ const i18n = {
             title: 'Production impact',
             desc: 'Measurable results in infrastructure and operations.',
             card1: { title: 'CI/CD & Automation', item1: '60% deployment time reduction', item2: 'Automated pipelines', item3: 'Infrastructure as code' },
-            card2: { title: 'Reliability', item1: '99.9% uptime in distributed environments', item2: 'Monitoring and alerting', item3: 'Postmortems and improvements' },
+            card2: { title: 'Reliability', item1: 'High availability in distributed environments', item2: 'Monitoring and alerting', item3: 'Postmortems and improvements' },
             card3: { title: 'Performance', item1: 'PostgreSQL optimization -35% latency', item2: 'Backend 20k+ req/5min', item3: 'Scaling without downtime' },
         },
         services: {
@@ -71,7 +71,7 @@ const i18n = {
             title: 'Impacto en producción',
             desc: 'Resultados medibles en infraestructura y operaciones.',
             card1: { title: 'CI/CD & Automatización', item1: 'Reducción 60% tiempo de deploy', item2: 'Pipelines automatizados', item3: 'Infraestructura como código' },
-            card2: { title: 'Confiabilidad', item1: '99.9% uptime en entornos distribuidos', item2: 'Monitoreo y alerting', item3: 'Postmortems y mejoras' },
+            card2: { title: 'Confiabilidad', item1: 'Alta disponibilidad en entornos distribuidos', item2: 'Monitoreo y alerting', item3: 'Postmortems y mejoras' },
             card3: { title: 'Performance', item1: 'Optimización PostgreSQL -35% latencia', item2: 'Backend 20k+ req/5min', item3: 'Scaling sin downtime' },
         },
         services: {
